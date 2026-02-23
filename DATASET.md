@@ -134,9 +134,9 @@ The dataset is released under **GPL-3.0 license**.
 
 ---
 
-## Citation
+## Citation / Attribution
 
-If you use this dataset, please cite:
+This project uses the **TMCAD (Truly Mechanical CAD) v2** dataset, created and released by **Zou & Zhu (2025)**. Please acknowledge the dataset authors if you use it in your work:
 
 ```bibtex
 @article{zou2025bringing,
