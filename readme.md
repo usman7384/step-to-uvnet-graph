@@ -1,7 +1,6 @@
 # CAD B-Rep to Face-Adjacency Graph Converter
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A step-by-step Jupyter notebook that converts CAD STEP files into **face-adjacency graphs** with parametric UV-sampled features, following the **UV-Net (CVPR 2021)** representation for geometric deep learning on boundary representations (B-Rep).
 
@@ -75,19 +74,22 @@ Shape: `(num_edges, N, 6)` where N = 10 (configurable)
 ## 🚀 Quick Start
 
 ### Prerequisites
-```bash
-pip install numpy torch dgl matplotlib OCP pandas networkx
-````
 
-### Usage
-
-1. Clone the repository
-2. Open the notebook:
+Create and activate a virtual environment, then install dependencies from the requirements file.
 
 ```bash
-jupyter notebook STEP_to_UVNet_Graph.ipynb
+# create venv
+python -m venv venv
+
+# activate
+# Windows
+venv\Scripts\activate
+# macOS / Linux
+source venv/bin/activate
+
+# install dependencies
+pip install -r requirements.txt
 ```
-
 3. Run all cells to see the pipeline in action
 4. Point `DATASET_ROOT` to your CAD dataset
 
@@ -114,22 +116,19 @@ cad-brep-graphs/
 ├── README.md                   # This file
 ├── DATASET.md                  # TMCAD dataset notes
 ├── requirements.txt            # Dependencies
-├── LICENSE                     # MIT
-└── examples/
-    └── train_uvnet.py          # Example training script
 ```
 
 ---
 
 ## 📚 Datasets
 
-Works with any STEP-based CAD dataset. Notes included for:
+This notebook works with any STEP-based CAD dataset, but for this project I used **TMCAD**.  
 
-* **TMCAD Dataset** — 9,799 mechanical CAD models
-* MechCAD — multi-class mechanical parts
-* Fusion 360 Gallery — Autodesk design dataset
+- **TMCAD Dataset** — 9,799 mechanical CAD models (used in this project)  
+- MechCAD — multi-class mechanical parts  
+- Fusion 360 Gallery — Autodesk design dataset  
 
----
+For more details on datasets and how to prepare them, see the separate [DATASET.md](DATASET.md) file.
 
 ## 🔬 Applications
 
@@ -154,20 +153,6 @@ The generated graphs can be used for:
   [https://arxiv.org/abs/2104.00706](https://arxiv.org/abs/2104.00706)
 
 * **TMCAD** — Zou & Zhu, Computer-Aided Design 2025
-
----
-
-## 🙏 Acknowledgments
-
-* Autodesk AI Lab for UV-Net
-* OpenCASCADE for the B-Rep kernel
-* TMCAD authors for high-quality CAD data
-
----
-
-## 📄 License
-
-MIT License — see [LICENSE](LICENSE).
 
 ---
 
