@@ -1,6 +1,3 @@
-Here’s your README with the same structure and technical depth, but a slightly lighter, friendlier tone (subtle humor + learning vibe, not unprofessional):
-
-```md
 # CAD B-Rep to Face-Adjacency Graph Converter
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
@@ -182,7 +179,3 @@ Questions, ideas, or CAD-ML curiosity welcome — open an issue.
 
 *The future of engineering design isn’t CAD or AI alone — it’s both working together, so neural networks can finally learn the language of B-Reps (and maybe complain less about meshes).*
 
-```
-
-If you'd like, I can also produce a **badge-rich / GitHub-polished** version (stars, last commit, notebook, etc.).
-```
