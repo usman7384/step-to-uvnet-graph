@@ -1,4 +1,4 @@
-# CAD B-Rep to Face-Adjacency Graph Converter
+# CAD B-Rep to Face-Adjacency Graphs
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 
